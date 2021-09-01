@@ -6,7 +6,8 @@ const ToDoList = ({todos, onDelete, onImportant}) => {
         return (
             <li key={item.id}
             className="list-group-item">
-                <ToDoListItem {...item} onDelete={onDelete} onImportant={onImportant}/>
+                <ToDoListItem {...item}
+                onDelete={onDelete} onImportant={onImportant}/>
             </li>
         )
     });
