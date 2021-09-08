@@ -1,0 +1,14 @@
+form{
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid #999;
+    overflow: hidden;
+}
+form>input{
+    width:100%;
+    border: none;
+}
+form>button{
+    border: none;
+}

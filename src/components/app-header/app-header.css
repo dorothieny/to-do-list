@@ -1,0 +1,10 @@
+.header{
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block; 
+}
+.heder_component{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

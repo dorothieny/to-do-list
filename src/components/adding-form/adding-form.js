@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './newtask.css';
 export default class NewTask extends Component {
     state={
         value:""

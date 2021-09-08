@@ -1,0 +1,15 @@
+.search-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    border: 1px solid #999;
+    overflow: hidden;
+}
+.search-bar>button{
+    border: none;
+}
+.input-bar{
+    width: 100%;
+    border: none;
+}

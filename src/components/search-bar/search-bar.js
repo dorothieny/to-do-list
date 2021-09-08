@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './search-bar.css'
 class SearchBar extends Component{
   state = {
     term: '',
@@ -20,7 +21,8 @@ class SearchBar extends Component{
     render(){
       const{onFilter, filter} = this.props;
       const styleBtn = {
-        backgroundColor: 'red'
+        backgroundColor: 'rgb(131, 46, 46)',
+        color: 'white'
       }
       const btns = this.buttons.map((el)=>{
         const isActive = filter === el.name;
@@ -29,18 +31,18 @@ class SearchBar extends Component{
           <button
           style = {clazz}
           name={el.name}
-        onClick={()=>onFilter(el.name)}>{el.label}</button>
+          onClick={()=>onFilter(el.name)}>{el.label}</button>
         )
       })
   
       
       return (
-        <>
-        <input placeholder="Search tasks" 
+        <div className="search-bar">
+        <input className='input-bar' placeholder="Search tasks" 
         onChange={this.onFilter}
         value={this.state.term}/>
         {btns}
-        </>
+        </div>
       )
     }
   };

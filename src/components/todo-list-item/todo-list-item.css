@@ -1,3 +1,24 @@
 .todo-list-item{
     padding: .75em .25em
 }
+.list-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.list-item>span{
+    width: 100%;
+}
+.list-item>button{
+    height: 40px;
+    border:none;
+    border-radius: 10px;
+    margin: 0 4px;
+    color: white;
+}
+.delete{
+    background: rgb(131, 46, 46);
+}
+.important{
+    background: rgb(205, 181, 47);
+}
